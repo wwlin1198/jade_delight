@@ -58,6 +58,7 @@ function confirmCity() {
 
 	city = document.getElementsByName('city')[0].value;
 	if (city == "") {
+		alert('Please enter a city.')
 		document.getElementById("Cerror").innerHTML = "<span>" + "*Enter city" + "</span>";
 		return false;
 	}
@@ -69,6 +70,7 @@ function confirmLastName() {
 	lastName = document.getElementsByName("lname")[0].value;
 	lastName = lastName.replace(/^\s+|\s+$/g, '');
 	if (lastName == "") {
+		alert('Please fill in your last name')
 		document.getElementById("Lerror").innerHTML = "<span>" + "* Please fill in your last name" + "</span>";
 		return false;
 	}
@@ -103,6 +105,7 @@ function confirmOrder(){
 function confirmStreet() {
 		street = document.getElementsByName('street')[0].value;
 		if (street == "") {
+			alert('Please enter street for delivery');
 			document.getElementById("Serror").innerHTML = "<span>" + "* Please enter street for delivery" + "</span>";
 			return false;
 		}
